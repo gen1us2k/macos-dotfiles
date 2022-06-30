@@ -72,7 +72,7 @@ CASE_SENSITIVE="false"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git tmux)
 export ZSH_TMUX_CONFIG=$HOME/.tmux.conf
-export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_AUTOSTART=false
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,5 +110,4 @@ alias ga='git add'
 alias gbh="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) -
 %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
 alias grs='git reset --hard'
-
-
+export GOBIN=~/go/bin
